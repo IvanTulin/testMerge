@@ -9,8 +9,8 @@ import UIKit
 
 class SecondViewController: UINavigationController {
     
-    var name = "Name"
-    var lastName = "Last name"
+    var name = "Liza"
+    var lastName = "Ivanova"
     
     private lazy var label: UILabel = {
         let label = UILabel(frame: CGRect(x: 50, y: 150, width: 100, height: 20))
@@ -24,5 +24,11 @@ class SecondViewController: UINavigationController {
         view.backgroundColor = .magenta
         view.addSubview(label)
 
+    }
+}
+
+extension SecondViewController {
+     func printName() {
+        print(name)
     }
 }
